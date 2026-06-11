@@ -1,0 +1,16 @@
+# Large data files
+data/*.nc
+data/*.grib
+data/*.idx
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# OS
+.DS_Store
+
+# Cursor
+.cursor/
