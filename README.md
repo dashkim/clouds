@@ -50,3 +50,13 @@ There's a lot of scripts, but lots of them are self explanitory. I started by re
 The 3d meshes are extrapolated from the 2d file. Instead of directly using the data, I had to write a script that added more dimensionality. They are pseudo-3d slabs on terrain. The ERA5 data also isn't the same resolution, which you can see in the movie. This is evident in the cloud deck visualization, as it looks like a massive sheet rather than the smooth clouds in the initial cloud visualizations. 
 
 - I was orignally planing on doing a lightweight for the model, as I thought it would be interesting. However, I didn't have the computational resources to train a model that large, and initial epochs had terrible accuracy. There was also limited inversions so training was unstable. I also had trouble with the data being a time series. Lastly, I thought ridge regression would be more condusive to a movie because feature relationship clarity. The legacy code is still there in case you want a peek. 
+
+
+## Challenges: 
+
+- Translating the 2d into 3d, better for visualizing
+- Getting the data: Getting started took weeks to get approved. Also working with the APIs for ERA5
+- Defining Inversions and sorting through noise..., loading the model's outputs as data on the mesh. 
+- The CNN (ended up unused)
+- Getting the smaller gifs to show up uncompressed/weird
+- translating different resolutions into a comprehensive movie
